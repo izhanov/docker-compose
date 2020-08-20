@@ -32,7 +32,8 @@ services:
     image: docker.elastic.co/logstash/logstash-oss:7.8.0
     container_name: logstash
     volumes:
-      - ./logstash/pipeline/:/usr/share/logstash/pipeline
+      - ./logstash/pipelines.yml:/usr/share/logstash/config/pipelines.yml:ro
+      - ./logstash/pipelines/:/usr/share/logstash/pipeline/
     ports:
       - 5044:5044
     depends_on:

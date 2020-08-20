@@ -3,7 +3,6 @@ filebeat:
     - type: log
       json:
         message_key: message
-        keys_under_root: true
       paths:
         - /var/log/ads/app.log
         - /var/log/geocoder/app.log

@@ -1,0 +1,3 @@
+- pipeline.id: ruby_micro
+  pipeline.workers: 2
+  path.config: ./pipeline/ruby_micro.config
